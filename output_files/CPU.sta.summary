@@ -1,0 +1,197 @@
+------------------------------------------------------------
+TimeQuest Timing Analyzer Summary
+------------------------------------------------------------
+
+Type  : Slow 1200mV 85C Model Setup 'Temporizador:comb_3|clock'
+Slack : -42.988
+TNS   : -37987.817
+
+Type  : Slow 1200mV 85C Model Setup 'clk50'
+Slack : -19.668
+TNS   : -3051.951
+
+Type  : Slow 1200mV 85C Model Setup 'InstructionMemory:comb_6|altsyncram:instructionRAM_rtl_0|altsyncram_a6h1:auto_generated|ram_block1a26~portb_address_reg0'
+Slack : -14.870
+TNS   : -1320.125
+
+Type  : Slow 1200mV 85C Model Setup 'lcdlab3:comb_19|LCD_Display:u1|CLK_400HZ'
+Slack : -3.394
+TNS   : -48.524
+
+Type  : Slow 1200mV 85C Model Hold 'InstructionMemory:comb_6|altsyncram:instructionRAM_rtl_0|altsyncram_a6h1:auto_generated|ram_block1a26~portb_address_reg0'
+Slack : -18.921
+TNS   : -880.084
+
+Type  : Slow 1200mV 85C Model Hold 'clk50'
+Slack : -2.850
+TNS   : -2.850
+
+Type  : Slow 1200mV 85C Model Hold 'Temporizador:comb_3|clock'
+Slack : 0.402
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Hold 'lcdlab3:comb_19|LCD_Display:u1|CLK_400HZ'
+Slack : 0.403
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Recovery 'lcdlab3:comb_19|LCD_Display:u1|CLK_400HZ'
+Slack : -3.290
+TNS   : -42.770
+
+Type  : Slow 1200mV 85C Model Recovery 'clk50'
+Slack : -3.188
+TNS   : -66.937
+
+Type  : Slow 1200mV 85C Model Removal 'lcdlab3:comb_19|LCD_Display:u1|CLK_400HZ'
+Slack : 3.588
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Removal 'clk50'
+Slack : 3.612
+TNS   : 0.000
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'InstructionMemory:comb_6|altsyncram:instructionRAM_rtl_0|altsyncram_a6h1:auto_generated|ram_block1a26~portb_address_reg0'
+Slack : -17.693
+TNS   : -10315.144
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clk50'
+Slack : -3.000
+TNS   : -789.521
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'Temporizador:comb_3|clock'
+Slack : -1.285
+TNS   : -1362.100
+
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'lcdlab3:comb_19|LCD_Display:u1|CLK_400HZ'
+Slack : -1.285
+TNS   : -48.830
+
+Type  : Slow 1200mV 0C Model Setup 'Temporizador:comb_3|clock'
+Slack : -39.016
+TNS   : -34357.190
+
+Type  : Slow 1200mV 0C Model Setup 'clk50'
+Slack : -17.953
+TNS   : -2761.275
+
+Type  : Slow 1200mV 0C Model Setup 'InstructionMemory:comb_6|altsyncram:instructionRAM_rtl_0|altsyncram_a6h1:auto_generated|ram_block1a26~portb_address_reg0'
+Slack : -13.828
+TNS   : -1202.505
+
+Type  : Slow 1200mV 0C Model Setup 'lcdlab3:comb_19|LCD_Display:u1|CLK_400HZ'
+Slack : -2.982
+TNS   : -41.429
+
+Type  : Slow 1200mV 0C Model Hold 'InstructionMemory:comb_6|altsyncram:instructionRAM_rtl_0|altsyncram_a6h1:auto_generated|ram_block1a26~portb_address_reg0'
+Slack : -17.109
+TNS   : -792.607
+
+Type  : Slow 1200mV 0C Model Hold 'clk50'
+Slack : -2.596
+TNS   : -2.596
+
+Type  : Slow 1200mV 0C Model Hold 'Temporizador:comb_3|clock'
+Slack : 0.353
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Hold 'lcdlab3:comb_19|LCD_Display:u1|CLK_400HZ'
+Slack : 0.354
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Recovery 'lcdlab3:comb_19|LCD_Display:u1|CLK_400HZ'
+Slack : -2.908
+TNS   : -37.803
+
+Type  : Slow 1200mV 0C Model Recovery 'clk50'
+Slack : -2.787
+TNS   : -58.527
+
+Type  : Slow 1200mV 0C Model Removal 'lcdlab3:comb_19|LCD_Display:u1|CLK_400HZ'
+Slack : 3.227
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Removal 'clk50'
+Slack : 3.229
+TNS   : 0.000
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'InstructionMemory:comb_6|altsyncram:instructionRAM_rtl_0|altsyncram_a6h1:auto_generated|ram_block1a26~portb_address_reg0'
+Slack : -16.218
+TNS   : -9302.971
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clk50'
+Slack : -3.000
+TNS   : -777.993
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'Temporizador:comb_3|clock'
+Slack : -1.285
+TNS   : -1362.100
+
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'lcdlab3:comb_19|LCD_Display:u1|CLK_400HZ'
+Slack : -1.285
+TNS   : -48.830
+
+Type  : Fast 1200mV 0C Model Setup 'Temporizador:comb_3|clock'
+Slack : -21.988
+TNS   : -19179.833
+
+Type  : Fast 1200mV 0C Model Setup 'clk50'
+Slack : -9.601
+TNS   : -1404.438
+
+Type  : Fast 1200mV 0C Model Setup 'InstructionMemory:comb_6|altsyncram:instructionRAM_rtl_0|altsyncram_a6h1:auto_generated|ram_block1a26~portb_address_reg0'
+Slack : -7.425
+TNS   : -639.734
+
+Type  : Fast 1200mV 0C Model Setup 'lcdlab3:comb_19|LCD_Display:u1|CLK_400HZ'
+Slack : -1.162
+TNS   : -9.973
+
+Type  : Fast 1200mV 0C Model Hold 'InstructionMemory:comb_6|altsyncram:instructionRAM_rtl_0|altsyncram_a6h1:auto_generated|ram_block1a26~portb_address_reg0'
+Slack : -9.739
+TNS   : -459.459
+
+Type  : Fast 1200mV 0C Model Hold 'clk50'
+Slack : -1.559
+TNS   : -1.559
+
+Type  : Fast 1200mV 0C Model Hold 'Temporizador:comb_3|clock'
+Slack : 0.054
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Hold 'lcdlab3:comb_19|LCD_Display:u1|CLK_400HZ'
+Slack : 0.182
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Recovery 'lcdlab3:comb_19|LCD_Display:u1|CLK_400HZ'
+Slack : -1.349
+TNS   : -17.532
+
+Type  : Fast 1200mV 0C Model Recovery 'clk50'
+Slack : -1.250
+TNS   : -26.240
+
+Type  : Fast 1200mV 0C Model Removal 'clk50'
+Slack : 1.852
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Removal 'lcdlab3:comb_19|LCD_Display:u1|CLK_400HZ'
+Slack : 1.860
+TNS   : 0.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'InstructionMemory:comb_6|altsyncram:instructionRAM_rtl_0|altsyncram_a6h1:auto_generated|ram_block1a26~portb_address_reg0'
+Slack : -8.930
+TNS   : -4821.899
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clk50'
+Slack : -3.000
+TNS   : -364.608
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'Temporizador:comb_3|clock'
+Slack : -1.000
+TNS   : -1060.000
+
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'lcdlab3:comb_19|LCD_Display:u1|CLK_400HZ'
+Slack : -1.000
+TNS   : -38.000
+
+------------------------------------------------------------

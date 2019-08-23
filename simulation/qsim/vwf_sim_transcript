@@ -1,0 +1,715 @@
+Determining the location of the ModelSim executable...
+
+Using: /opt/intelFPGA/16.1/modelsim_ase/linuxaloem
+
+To specify a ModelSim executable directory, select: Tools -> Options -> EDA Tool Options
+Note: if both ModelSim-Altera and ModelSim executables are available, ModelSim-Altera will be used.
+
+**** Generating the ModelSim Testbench ****
+
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off CPU -c CPU --vector_source="/home-local/aluno/PROCESSADOR/CPU/Waveform7.vwf" --testbench_file="/home-local/aluno/PROCESSADOR/CPU/simulation/qsim/Waveform7.vwf.vt"
+
+Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition    Info: Copyright (C) 2016  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and its AMPP partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel MegaCore Function License Agreement, or other     Info: applicable license agreement, including, without limitation,     Info: that your use is for the sole purpose of programming logic     Info: devices manufactured by Intel and sold by Intel or its     Info: authorized distributors.  Please refer to the applicable     Info: agreement for further details.    Info: Processing started: Wed Jun 21 19:35:07 2017Info: Command: quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off CPU -c CPU --vector_source=/home-local/aluno/PROCESSADOR/CPU/Waveform7.vwf --testbench_file=/home-local/aluno/PROCESSADOR/CPU/simulation/qsim/Waveform7.vwf.vtWarning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
+g output pin "DspOnes[0]" in vector source file when writing test bench files
+rs[3][26]" in design
+Inconsistency detected by ld.so: dl-close.c: 811: _dl_close: Assertion `map->l_init_called' failed!
+sterFile:comb_6|registers[7][9]" in design
+Completed successfully. 
+
+Completed successfully. 
+
+**** Generating the functional simulation netlist ****
+
+quartus_eda --write_settings_files=off --simulation --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory="/home-local/aluno/PROCESSADOR/CPU/simulation/qsim/" CPU -c CPU
+
+Inconsistency detected by ld.so: dl-close.c: 811: _dl_close: Assertion `map->l_init_called' failed!
+Info: *******************************************************************Info: Running Quartus Prime EDA Netlist Writer    Info: Version 16.1.0 Build 196 10/24/2016 SJ Standard Edition    Info: Copyright (C) 2016  Intel Corporation. All rights reserved.    Info: Your use of Intel Corporation's design tools, logic functions     Info: and other software and tools, and its AMPP partner logic     Info: functions, and any output files from any of the foregoing     Info: (including device programming or simulation files), and any     Info: associated documentation or information are expressly subject     Info: to the terms and conditions of the Intel Program License     Info: Subscription Agreement, the Intel Quartus Prime License Agreement,    Info: the Intel MegaCore Function License Agreement, or other     Info: applicable license agreement, including, without limitation,     Info: that your use is for the sole purpose of programming logic     Info: devices manufactured by Intel and sold by Intel or its     Info: authorized distributors.  Please refer to the applicable     Info: agreement for further details.    Info: Processing started: Wed Jun 21 19:35:09 2017Info: Command: quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home-local/aluno/PROCESSADOR/CPU/simulation/qsim/ CPU -c CPUWarning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.Info (204019): Generated file CPU.vo in folder "/home-local/aluno/PROCESSADOR/CPU/simulation/qsim//" for EDA simulation toolInfo: Quartus Prime EDA Netlist Writer was successful. 0 errors, 1 warning    Info: Peak virtual memory: 1047 megabytes    Info: Processing ended: Wed Jun 21 19:35:09 2017    Info: Elapsed time: 00:00:00    Info: Total CPU time (on all processors): 00:00:01
+Completed successfully. 
+
+**** Generating the ModelSim .do script ****
+
+/home-local/aluno/PROCESSADOR/CPU/simulation/qsim/CPU.do generated.
+
+Completed successfully. 
+
+**** Running the ModelSim simulation ****
+
+/opt/intelFPGA/16.1/modelsim_ase/linuxaloem/vsim -c -do CPU.do
+
+Reading pref.tcl
+# 10.5b
+# do CPU.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:35:12 on Jun 21,2017# vlog -work work CPU.vo 
+# -- Compiling module CPU
+# -- Compiling module hard_block
+# # Top level modules:# 	CPU# End time: 19:35:12 on Jun 21,2017, Elapsed time: 0:00:00# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 19:35:12 on Jun 21,2017# vlog -work work Waveform7.vwf.vt 
+# -- Compiling module CPU_vlg_vec_tst
+# # Top level modules:# 	CPU_vlg_vec_tst# End time: 19:35:12 on Jun 21,2017, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.CPU_vlg_vec_tst # Start time: 19:35:12 on Jun 21,2017# Loading work.CPU_vlg_vec_tst# Loading work.CPU# Loading work.hard_block# Loading cycloneive_ver.cycloneive_io_obuf# Loading cycloneive_ver.cycloneive_io_ibuf
+# after#26
+# ** Note: $finish    : Waveform7.vwf.vt(59)#    Time: 1 us  Iteration: 0  Instance: /CPU_vlg_vec_tst
+# End time: 19:35:13 on Jun 21,2017, Elapsed time: 0:00:01# Errors: 0, Warnings: 0
+Completed successfully. 
+
+**** Converting ModelSim VCD to vector waveform ****
+
+Reading /home-local/aluno/PROCESSADOR/CPU/Waveform7.vwf...
+
+Reading /home-local/aluno/PROCESSADOR/CPU/simulation/qsim/CPU.msim.vcd...
+
+Processing channel transitions... 
+
+Warning: clk - signal not found in VCD.
+
+Warning: reg_0[31] - signal not found in VCD.
+
+Warning: reg_0[30] - signal not found in VCD.
+
+Warning: reg_0[29] - signal not found in VCD.
+
+Warning: reg_0[28] - signal not found in VCD.
+
+Warning: reg_0[27] - signal not found in VCD.
+
+Warning: reg_0[26] - signal not found in VCD.
+
+Warning: reg_0[25] - signal not found in VCD.
+
+Warning: reg_0[24] - signal not found in VCD.
+
+Warning: reg_0[23] - signal not found in VCD.
+
+Warning: reg_0[22] - signal not found in VCD.
+
+Warning: reg_0[21] - signal not found in VCD.
+
+Warning: reg_0[20] - signal not found in VCD.
+
+Warning: reg_0[19] - signal not found in VCD.
+
+Warning: reg_0[18] - signal not found in VCD.
+
+Warning: reg_0[17] - signal not found in VCD.
+
+Warning: reg_0[16] - signal not found in VCD.
+
+Warning: reg_0[15] - signal not found in VCD.
+
+Warning: reg_0[14] - signal not found in VCD.
+
+Warning: reg_0[13] - signal not found in VCD.
+
+Warning: reg_0[12] - signal not found in VCD.
+
+Warning: reg_0[11] - signal not found in VCD.
+
+Warning: reg_0[10] - signal not found in VCD.
+
+Warning: reg_0[9] - signal not found in VCD.
+
+Warning: reg_0[8] - signal not found in VCD.
+
+Warning: reg_0[7] - signal not found in VCD.
+
+Warning: reg_0[6] - signal not found in VCD.
+
+Warning: reg_0[5] - signal not found in VCD.
+
+Warning: reg_0[4] - signal not found in VCD.
+
+Warning: reg_0[3] - signal not found in VCD.
+
+Warning: reg_0[2] - signal not found in VCD.
+
+Warning: reg_0[1] - signal not found in VCD.
+
+Warning: reg_0[0] - signal not found in VCD.
+
+Warning: reg_1[31] - signal not found in VCD.
+
+Warning: reg_1[30] - signal not found in VCD.
+
+Warning: reg_1[29] - signal not found in VCD.
+
+Warning: reg_1[28] - signal not found in VCD.
+
+Warning: reg_1[27] - signal not found in VCD.
+
+Warning: reg_1[26] - signal not found in VCD.
+
+Warning: reg_1[25] - signal not found in VCD.
+
+Warning: reg_1[24] - signal not found in VCD.
+
+Warning: reg_1[23] - signal not found in VCD.
+
+Warning: reg_1[22] - signal not found in VCD.
+
+Warning: reg_1[21] - signal not found in VCD.
+
+Warning: reg_1[20] - signal not found in VCD.
+
+Warning: reg_1[19] - signal not found in VCD.
+
+Warning: reg_1[18] - signal not found in VCD.
+
+Warning: reg_1[17] - signal not found in VCD.
+
+Warning: reg_1[16] - signal not found in VCD.
+
+Warning: reg_1[15] - signal not found in VCD.
+
+Warning: reg_1[14] - signal not found in VCD.
+
+Warning: reg_1[13] - signal not found in VCD.
+
+Warning: reg_1[12] - signal not found in VCD.
+
+Warning: reg_1[11] - signal not found in VCD.
+
+Warning: reg_1[10] - signal not found in VCD.
+
+Warning: reg_1[9] - signal not found in VCD.
+
+Warning: reg_1[8] - signal not found in VCD.
+
+Warning: reg_1[7] - signal not found in VCD.
+
+Warning: reg_1[6] - signal not found in VCD.
+
+Warning: reg_1[5] - signal not found in VCD.
+
+Warning: reg_1[4] - signal not found in VCD.
+
+Warning: reg_1[3] - signal not found in VCD.
+
+Warning: reg_1[2] - signal not found in VCD.
+
+Warning: reg_1[1] - signal not found in VCD.
+
+Warning: reg_1[0] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][31] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][30] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][29] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][28] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][27] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][26] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][25] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][24] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][23] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][22] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][21] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][20] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][19] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][18] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][17] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][16] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][15] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][14] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][13] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][12] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][11] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][10] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][9] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][8] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][7] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][6] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][5] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][4] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][3] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][2] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][1] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[0][0] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][31] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][30] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][29] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][28] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][27] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][26] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][25] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][24] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][23] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][22] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][21] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][20] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][19] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][18] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][17] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][16] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][15] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][14] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][13] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][12] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][11] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][10] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][9] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][8] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][7] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][6] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][5] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][4] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][3] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][2] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][1] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[1][0] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][31] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][30] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][29] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][28] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][27] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][26] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][25] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][24] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][23] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][22] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][21] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][20] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][19] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][18] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][17] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][16] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][15] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][14] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][13] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][12] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][11] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][10] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][9] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][8] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][7] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][6] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][5] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][4] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][3] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][2] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][1] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[2][0] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][31] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][30] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][29] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][28] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][27] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][26] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][25] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][24] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][23] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][22] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][21] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][20] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][19] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][18] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][17] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][16] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][15] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][14] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][13] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][12] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][11] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][10] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][9] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][8] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][7] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][6] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][5] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][4] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][3] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][2] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][1] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[3][0] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][31] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][30] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][29] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][28] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][27] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][26] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][25] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][24] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][23] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][22] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][21] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][20] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][19] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][18] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][17] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][16] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][15] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][14] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][13] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][12] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][11] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][10] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][9] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][8] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][7] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][6] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][5] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][4] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][3] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][2] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][1] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[4][0] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][31] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][30] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][29] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][28] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][27] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][26] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][25] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][24] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][23] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][22] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][21] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][20] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][19] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][18] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][17] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][16] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][15] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][14] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][13] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][12] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][11] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][10] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][9] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][8] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][7] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][6] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][5] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][4] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][3] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][2] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][1] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[5][0] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][31] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][30] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][29] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][28] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][27] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][26] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][25] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][24] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][23] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][22] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][21] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][20] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][19] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][18] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][17] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][16] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][15] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][14] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][13] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][12] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][11] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][10] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][9] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][8] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][7] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][6] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][5] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][4] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][3] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][2] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][1] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[6][0] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][31] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][30] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][29] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][28] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][27] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][26] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][25] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][24] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][23] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][22] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][21] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][20] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][19] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][18] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][17] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][16] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][15] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][14] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][13] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][12] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][11] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][10] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][9] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][8] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][7] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][6] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][5] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][4] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][3] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][2] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][1] - signal not found in VCD.
+
+Warning: registerFile:comb_6|registers[7][0] - signal not found in VCD.
+
+Writing the resulting VWF to /home-local/aluno/PROCESSADOR/CPU/simulation/qsim/CPU_20170621193513.sim.vwf
+
+Finished VCD to VWF conversion.
+
+Completed successfully. 
+
+All completed.

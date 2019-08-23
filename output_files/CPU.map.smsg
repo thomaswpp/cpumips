@@ -1,0 +1,20 @@
+Warning (10273): Verilog HDL warning at ControlUnit.v(51): extended using "x" or "z" File: /home-local/aluno/Downloads/CompProc-13-11-2018 (2)/cpu/ControlUnit.v Line: 51
+Warning (10273): Verilog HDL warning at ControlUnit.v(203): extended using "x" or "z" File: /home-local/aluno/Downloads/CompProc-13-11-2018 (2)/cpu/ControlUnit.v Line: 203
+Warning (10273): Verilog HDL warning at ControlUnit.v(213): extended using "x" or "z" File: /home-local/aluno/Downloads/CompProc-13-11-2018 (2)/cpu/ControlUnit.v Line: 213
+Warning (10273): Verilog HDL warning at ControlUnit.v(258): extended using "x" or "z" File: /home-local/aluno/Downloads/CompProc-13-11-2018 (2)/cpu/ControlUnit.v Line: 258
+Warning (10273): Verilog HDL warning at ControlUnit.v(267): extended using "x" or "z" File: /home-local/aluno/Downloads/CompProc-13-11-2018 (2)/cpu/ControlUnit.v Line: 267
+Warning (10273): Verilog HDL warning at ControlUnit.v(281): extended using "x" or "z" File: /home-local/aluno/Downloads/CompProc-13-11-2018 (2)/cpu/ControlUnit.v Line: 281
+Warning (10273): Verilog HDL warning at ControlUnit.v(290): extended using "x" or "z" File: /home-local/aluno/Downloads/CompProc-13-11-2018 (2)/cpu/ControlUnit.v Line: 290
+Warning (10273): Verilog HDL warning at ControlUnit.v(345): extended using "x" or "z" File: /home-local/aluno/Downloads/CompProc-13-11-2018 (2)/cpu/ControlUnit.v Line: 345
+Warning (10273): Verilog HDL warning at ControlUnit.v(355): extended using "x" or "z" File: /home-local/aluno/Downloads/CompProc-13-11-2018 (2)/cpu/ControlUnit.v Line: 355
+Warning (10273): Verilog HDL warning at ControlUnit.v(375): extended using "x" or "z" File: /home-local/aluno/Downloads/CompProc-13-11-2018 (2)/cpu/ControlUnit.v Line: 375
+Warning (10273): Verilog HDL warning at ControlUnit.v(387): extended using "x" or "z" File: /home-local/aluno/Downloads/CompProc-13-11-2018 (2)/cpu/ControlUnit.v Line: 387
+Warning (10273): Verilog HDL warning at ControlUnit.v(409): extended using "x" or "z" File: /home-local/aluno/Downloads/CompProc-13-11-2018 (2)/cpu/ControlUnit.v Line: 409
+Warning (10273): Verilog HDL warning at ControlUnit.v(421): extended using "x" or "z" File: /home-local/aluno/Downloads/CompProc-13-11-2018 (2)/cpu/ControlUnit.v Line: 421
+Warning (10268): Verilog HDL information at PC.v(24): always construct contains both blocking and non-blocking assignments File: /home-local/aluno/Downloads/CompProc-13-11-2018 (2)/cpu/PC.v Line: 24
+Warning (10273): Verilog HDL warning at Mux.v(19): extended using "x" or "z" File: /home-local/aluno/Downloads/CompProc-13-11-2018 (2)/cpu/Mux.v Line: 19
+Warning (10273): Verilog HDL warning at Alusrc.v(15): extended using "x" or "z" File: /home-local/aluno/Downloads/CompProc-13-11-2018 (2)/cpu/Alusrc.v Line: 15
+Warning (10273): Verilog HDL warning at alu.v(30): extended using "x" or "z" File: /home-local/aluno/Downloads/CompProc-13-11-2018 (2)/cpu/alu.v Line: 30
+Info (10281): Verilog HDL Declaration information at OutputPC.v(9): object "six" differs only in case from object "Six" in the same scope File: /home-local/aluno/Downloads/CompProc-13-11-2018 (2)/cpu/OutputPC.v Line: 9
+Info (10281): Verilog HDL Declaration information at OutputPC.v(10): object "five" differs only in case from object "Five" in the same scope File: /home-local/aluno/Downloads/CompProc-13-11-2018 (2)/cpu/OutputPC.v Line: 10
+Info (10281): Verilog HDL Declaration information at OutputPC.v(11): object "four" differs only in case from object "Four" in the same scope File: /home-local/aluno/Downloads/CompProc-13-11-2018 (2)/cpu/OutputPC.v Line: 11

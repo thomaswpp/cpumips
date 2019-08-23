@@ -1,0 +1,91 @@
+# Copyright (C) 2017  Intel Corporation. All rights reserved.
+# Your use of Intel Corporation's design tools, logic functions 
+# and other software and tools, and its AMPP partner logic 
+# functions, and any output files from any of the foregoing 
+# (including device programming or simulation files), and any 
+# associated documentation or information are expressly subject 
+# to the terms and conditions of the Intel Program License 
+# Subscription Agreement, the Intel Quartus Prime License Agreement,
+# the Intel FPGA IP License Agreement, or other applicable license
+# agreement, including, without limitation, that your use is for
+# the sole purpose of programming logic devices manufactured by
+# Intel and sold by Intel or its authorized distributors.  Please
+# refer to the applicable agreement for further details.
+
+# Quartus Prime Version 17.1.0 Build 590 10/25/2017 SJ Standard Edition
+# File: /home-local/aluno/cpu/CPU.csv
+# Generated on: Tue Jun 26 17:32:15 2018
+
+# Note: The column header names should not be changed if you wish to import this .csv file into the Quartus Prime software.
+
+To,Direction,Location,I/O Bank,VREF Group,Fitter Location,I/O Standard,Reserved,Current Strength,Slew Rate,Differential Pair,Strict Preservation
+Dsp4[6],Output,PIN_AB19,4,B4_N0,PIN_AB19,2.5 V,,,,,
+Dsp4[5],Output,PIN_AA19,4,B4_N0,PIN_AA19,2.5 V,,,,,
+Dsp4[4],Output,PIN_AG21,4,B4_N2,PIN_AG21,2.5 V,,,,,
+Dsp4[3],Output,PIN_AH21,4,B4_N2,PIN_AH21,2.5 V,,,,,
+Dsp4[2],Output,PIN_AE19,4,B4_N1,PIN_AE19,2.5 V,,,,,
+Dsp4[1],Output,PIN_AF19,4,B4_N1,PIN_AF19,2.5 V,,,,,
+Dsp4[0],Output,PIN_AE18,4,B4_N2,PIN_AE18,2.5 V,,,,,
+Dsp5[6],Output,PIN_AD18,4,B4_N1,PIN_AD18,2.5 V,,,,,
+Dsp5[5],Output,PIN_AC18,4,B4_N1,PIN_AC18,2.5 V,,,,,
+Dsp5[4],Output,PIN_AB18,4,B4_N0,PIN_AB18,2.5 V,,,,,
+Dsp5[3],Output,PIN_AH19,4,B4_N2,PIN_AH19,2.5 V,,,,,
+Dsp5[2],Output,PIN_AG19,4,B4_N2,PIN_AG19,2.5 V,,,,,
+Dsp5[1],Output,PIN_AF18,4,B4_N1,PIN_AF18,2.5 V,,,,,
+Dsp5[0],Output,PIN_AH18,4,B4_N2,PIN_AH18,2.5 V,,,,,
+Dsp6[6],Output,PIN_AA17,4,B4_N1,PIN_AA17,2.5 V,,,,,
+Dsp6[5],Output,PIN_AB16,4,B4_N2,PIN_AB16,2.5 V,,,,,
+Dsp6[4],Output,PIN_AA16,4,B4_N2,PIN_AA16,2.5 V,,,,,
+Dsp6[3],Output,PIN_AB17,4,B4_N1,PIN_AB17,2.5 V,,,,,
+Dsp6[2],Output,PIN_AB15,4,B4_N2,PIN_AB15,2.5 V,,,,,
+Dsp6[1],Output,PIN_AA15,4,B4_N2,PIN_AA15,2.5 V,,,,,
+Dsp6[0],Output,PIN_AC17,4,B4_N2,PIN_AC17,2.5 V,,,,,
+DspHundreds[6],Output,PIN_AA25,5,B5_N1,PIN_AA25,2.5 V,,,,,
+DspHundreds[5],Output,PIN_AA26,5,B5_N1,PIN_AA26,2.5 V,,,,,
+DspHundreds[4],Output,PIN_Y25,5,B5_N1,PIN_Y25,2.5 V,,,,,
+DspHundreds[3],Output,PIN_W26,5,B5_N1,PIN_W26,2.5 V,,,,,
+DspHundreds[2],Output,PIN_Y26,5,B5_N1,PIN_Y26,2.5 V,,,,,
+DspHundreds[1],Output,PIN_W27,5,B5_N1,PIN_W27,2.5 V,,,,,
+DspHundreds[0],Output,PIN_W28,5,B5_N1,PIN_W28,2.5 V,,,,,
+DspOnes[6],Output,PIN_G18,7,B7_N2,PIN_G18,2.5 V,,,,,
+DspOnes[5],Output,PIN_F22,7,B7_N0,PIN_F22,2.5 V,,,,,
+DspOnes[4],Output,PIN_E17,7,B7_N2,PIN_E17,2.5 V,,,,,
+DspOnes[3],Output,PIN_L26,6,B6_N1,PIN_L26,2.5 V,,,,,
+DspOnes[2],Output,PIN_L25,6,B6_N1,PIN_L25,2.5 V,,,,,
+DspOnes[1],Output,PIN_J22,6,B6_N0,PIN_J22,2.5 V,,,,,
+DspOnes[0],Output,PIN_H22,6,B6_N0,PIN_H22,2.5 V,,,,,
+DspTens[6],Output,PIN_M24,6,B6_N2,PIN_M24,2.5 V,,,,,
+DspTens[5],Output,PIN_Y22,5,B5_N0,PIN_Y22,2.5 V,,,,,
+DspTens[4],Output,PIN_W21,5,B5_N1,PIN_W21,2.5 V,,,,,
+DspTens[3],Output,PIN_W22,5,B5_N0,PIN_W22,2.5 V,,,,,
+DspTens[2],Output,PIN_W25,5,B5_N1,PIN_W25,2.5 V,,,,,
+DspTens[1],Output,PIN_U23,5,B5_N1,PIN_U23,2.5 V,,,,,
+DspTens[0],Output,PIN_U24,5,B5_N0,PIN_U24,2.5 V,,,,,
+button,Input,PIN_M23,6,B6_N2,PIN_M23,2.5 V,,,,,
+clk,Output,PIN_G19,7,B7_N2,PIN_G19,2.5 V,,,,,
+clk50,Input,PIN_Y2,2,B2_N0,PIN_Y2,2.5 V,,,,,
+inSign,Input,PIN_Y24,5,B5_N2,PIN_Y24,2.5 V,,,,,
+keyIn[15],Input,PIN_AA22,5,B5_N2,PIN_AA22,2.5 V,,,,,
+keyIn[14],Input,PIN_AA23,5,B5_N2,PIN_AA23,2.5 V,,,,,
+keyIn[13],Input,PIN_AA24,5,B5_N2,PIN_AA24,2.5 V,,,,,
+keyIn[12],Input,PIN_AB23,5,B5_N2,PIN_AB23,2.5 V,,,,,
+keyIn[11],Input,PIN_AB24,5,B5_N2,PIN_AB24,2.5 V,,,,,
+keyIn[10],Input,PIN_AC24,5,B5_N2,PIN_AC24,2.5 V,,,,,
+keyIn[9],Input,PIN_AB25,5,B5_N1,PIN_AB25,2.5 V,,,,,
+keyIn[8],Input,PIN_AC25,5,B5_N2,PIN_AC25,2.5 V,,,,,
+keyIn[7],Input,PIN_AB26,5,B5_N1,PIN_AB26,2.5 V,,,,,
+keyIn[6],Input,PIN_AD26,5,B5_N2,PIN_AD26,2.5 V,,,,,
+keyIn[5],Input,PIN_AC26,5,B5_N2,PIN_AC26,2.5 V,,,,,
+keyIn[4],Input,PIN_AB27,5,B5_N1,PIN_AB27,2.5 V,,,,,
+keyIn[3],Input,PIN_AD27,5,B5_N2,PIN_AD27,2.5 V,,,,,
+keyIn[2],Input,PIN_AC27,5,B5_N2,PIN_AC27,2.5 V,,,,,
+keyIn[1],Input,PIN_AC28,5,B5_N2,PIN_AC28,2.5 V,,,,,
+keyIn[0],Input,PIN_AB28,5,B5_N1,PIN_AB28,2.5 V,,,,,
+reset,Input,PIN_Y23,5,B5_N2,PIN_Y23,2.5 V,,,,,
+signDsp[6],Output,PIN_V21,5,B5_N1,PIN_V21,2.5 V,,,,,
+signDsp[5],Output,PIN_U21,5,B5_N0,PIN_U21,2.5 V,,,,,
+signDsp[4],Output,PIN_AB20,4,B4_N0,PIN_AB20,2.5 V,,,,,
+signDsp[3],Output,PIN_AA21,4,B4_N0,PIN_AA21,2.5 V,,,,,
+signDsp[2],Output,PIN_AD24,4,B4_N0,PIN_AD24,2.5 V,,,,,
+signDsp[1],Output,PIN_AF23,4,B4_N0,PIN_AF23,2.5 V,,,,,
+signDsp[0],Output,PIN_Y19,4,B4_N0,PIN_Y19,2.5 V,,,,,

@@ -1,0 +1,321 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "signDsp[1]",
+					"strict" : false
+				},
+				{
+					"name" : "signDsp[2]",
+					"strict" : false
+				},
+				{
+					"name" : "signDsp[3]",
+					"strict" : false
+				},
+				{
+					"name" : "signDsp[4]",
+					"strict" : false
+				},
+				{
+					"name" : "signDsp[5]",
+					"strict" : false
+				},
+				{
+					"name" : "signDsp[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DspHundreds[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DspHundreds[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DspHundreds[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DspHundreds[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DspHundreds[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DspHundreds[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DspHundreds[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DspTens[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DspTens[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DspTens[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DspTens[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DspTens[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DspTens[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DspTens[6]",
+					"strict" : false
+				},
+				{
+					"name" : "DspOnes[0]",
+					"strict" : false
+				},
+				{
+					"name" : "DspOnes[1]",
+					"strict" : false
+				},
+				{
+					"name" : "DspOnes[2]",
+					"strict" : false
+				},
+				{
+					"name" : "DspOnes[3]",
+					"strict" : false
+				},
+				{
+					"name" : "DspOnes[4]",
+					"strict" : false
+				},
+				{
+					"name" : "DspOnes[5]",
+					"strict" : false
+				},
+				{
+					"name" : "DspOnes[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Dsp6[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Dsp6[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Dsp6[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Dsp6[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Dsp6[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Dsp6[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Dsp6[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Dsp5[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Dsp5[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Dsp5[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Dsp5[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Dsp5[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Dsp5[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Dsp5[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Dsp4[0]",
+					"strict" : false
+				},
+				{
+					"name" : "Dsp4[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Dsp4[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Dsp4[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Dsp4[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Dsp4[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Dsp4[6]",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_EN",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_RS",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_DATA[0]",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_DATA[1]",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_DATA[2]",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_DATA[3]",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_DATA[4]",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_DATA[5]",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_DATA[6]",
+					"strict" : false
+				},
+				{
+					"name" : "LCD_DATA[7]",
+					"strict" : false
+				},
+				{
+					"name" : "reset",
+					"strict" : false
+				},
+				{
+					"name" : "clk50",
+					"strict" : false
+				},
+				{
+					"name" : "inSign",
+					"strict" : false
+				},
+				{
+					"name" : "keyIn[15]",
+					"strict" : false
+				},
+				{
+					"name" : "keyIn[14]",
+					"strict" : false
+				},
+				{
+					"name" : "keyIn[13]",
+					"strict" : false
+				},
+				{
+					"name" : "keyIn[12]",
+					"strict" : false
+				},
+				{
+					"name" : "keyIn[11]",
+					"strict" : false
+				},
+				{
+					"name" : "keyIn[10]",
+					"strict" : false
+				},
+				{
+					"name" : "keyIn[9]",
+					"strict" : false
+				},
+				{
+					"name" : "keyIn[8]",
+					"strict" : false
+				},
+				{
+					"name" : "keyIn[7]",
+					"strict" : false
+				},
+				{
+					"name" : "keyIn[6]",
+					"strict" : false
+				},
+				{
+					"name" : "keyIn[5]",
+					"strict" : false
+				},
+				{
+					"name" : "keyIn[4]",
+					"strict" : false
+				},
+				{
+					"name" : "keyIn[3]",
+					"strict" : false
+				},
+				{
+					"name" : "keyIn[2]",
+					"strict" : false
+				},
+				{
+					"name" : "keyIn[1]",
+					"strict" : false
+				},
+				{
+					"name" : "keyIn[0]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
